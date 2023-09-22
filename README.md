@@ -72,4 +72,22 @@ Vertību tabula:
 | 1 | 1 | 0 |
 
 informacijas avots: (13.09.2023)
->https://en.wikipedia.org/wiki/XOR_gate
+>https://en.wikipedia.org/wiki/XOR_gateš
+
+## Logisko operaciju prioritāte
+
+Python izpilda logiskas darbības secīgi, atkarīgi no viņu prioritātes.
+izpildišanas secība:
+
+1. NOT
+2. AND
+3. OR
+
+piemerā "if  y == 10 or x > -3 and x <= 30:" vispirms izpildisies Skaitļu salidzinājumi, pēc tam AND, un tikai pēc tam OR.
+
+Salidzinājumiem un testiem (in, not in, is, is not, <, <=, >, >=, !=, ==) ir augstāka prioritāte, neka logiskiem operacijam.
+
+Lai nomainītu izpildīšānas secību, ir jalito apaļas iekavas (), ievietojot vinās operaciju, kurai jabūt augstāka prioritāte.
+
+informacijas avots: (18.09.2023)
+>https://docs.python.org/3/reference/expressions.html#operator-precedence
