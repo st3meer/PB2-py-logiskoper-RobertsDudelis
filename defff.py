@@ -1,8 +1,24 @@
+from doctest import testmod
 
-def parbaudit(user_input1):
-    if user_input1 > 3.9:
-        print("true")
+
+
+def parbaudit(koord_x:float) -> bool:
+    """
+    >>> parbaudit(3.9)
+    False
+    >>> parbaudit(4)
+    True
+    >>> parbaudit(3)
+    False
+
+    """
+        
+    if koord_x > 3.9:
+        print(True)
     else:
-        print("False")
+        print(False)
 
+
+testmod(verbose=True) 
 parbaudit(float(input("ievadiet skaitli: ")))
+
